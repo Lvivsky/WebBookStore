@@ -7,7 +7,7 @@ import java.sql.SQLException;
 public class MySqlConnector {
 
     private static final String MYSQL_DRIVER = "com.mysql.cj.jdbc.Driver";
-    private static final String URL = "jdbc:mysql://localhost:3306/web?useUnicode=true"
+    private static final String URL = "jdbc:mysql://localhost:3306/book_shop?useUnicode=true"
             + "&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
 
     private static final String USER = "root";
