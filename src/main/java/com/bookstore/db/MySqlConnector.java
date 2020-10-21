@@ -1,22 +1,31 @@
 package com.bookstore.db;
 
+import lombok.extern.log4j.Log4j;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
+@Log4j
 public class MySqlConnector {
 
     private static final String MYSQL_DRIVER = "com.mysql.cj.jdbc.Driver";
-    private static final String URL = "jdbc:mysql://localhost:3306/book_shop?useUnicode=true"
+    private static final String URL = "jdbc:mysql://localhost:3306/store?useUnicode=true"
             + "&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
 
     private static final String USER = "root";
     private static final String PASSWORD = "password";
 
-    public static Connection getConnection() throws ClassNotFoundException, SQLException
+    public static Connection getConnection()
     {
-        Class.forName(MYSQL_DRIVER);
-        return DriverManager.getConnection(URL, USER, PASSWORD);
+        Connection connection = null;
+        try {
+            Class.forName(MYSQL_DRIVER);
+            connection = DriverManager.getConnection(URL, USER, PASSWORD);
+        } catch ( ClassNotFoundException | SQLException e) {
+            log.error(e.getMessage(), e);
+        }
+        return connection;
     }
 
 }
