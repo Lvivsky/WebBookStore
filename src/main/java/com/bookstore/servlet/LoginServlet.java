@@ -2,6 +2,7 @@ package com.bookstore.servlet;
 
 import com.bookstore.model.User;
 import com.bookstore.service.UserService;
+import com.bookstore.service.impl.UserServiceImpl;
 import lombok.SneakyThrows;
 import lombok.extern.log4j.Log4j;
 
@@ -12,6 +13,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.Objects;
 
 @Log4j
@@ -20,13 +22,13 @@ public class LoginServlet extends HttpServlet {
 
     private UserService userService;
 
-    public LoginServlet(UserService userService) {
-        this.userService = userService;
+    public LoginServlet() {
+        userService = new UserServiceImpl();
     }
 
     @SneakyThrows
     @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) {
 
         String email = req.getParameter("email");
         User user = userService.getUser(email);
@@ -41,16 +43,18 @@ public class LoginServlet extends HttpServlet {
                 session.setAttribute("userName", user.getFirstName());
                 session.setAttribute("userEmail", email);
 
-                req.getRequestDispatcher("cabinet.jsp").forward(req, resp);
+                resp.setContentType("text/plain");
+                resp.setCharacterEncoding("UTF-8");
+
+                try (PrintWriter writer = resp.getWriter())
+                {
+                    writer.write("Success");
+                }
             } else {
-                log.error("Wrong password for user with email: " + email);
-                req.getRequestDispatcher("login.jsp").forward(req,resp);
+                log.info("Wrong password for user with email: " + email);
             }
         } else {
             log.info("User with email : " + email + " is not registered. Redirection to registration page.");
-            req.getRequestDispatcher("registration.jsp").forward(req,resp);
         }
-
-
     }
 }

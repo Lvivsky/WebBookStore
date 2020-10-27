@@ -88,10 +88,10 @@ public class UserDaoImpl implements UserDao {
                         "insert into user(email,password,first_name,last_name,role) values (?,?,?,?,?)")
             ) {
             statement.setString(1, user.getEmail());
-            statement.setString(2, user.getEmail());
-            statement.setString(3, user.getEmail());
-            statement.setString(4, user.getEmail());
-            statement.setString(5, user.getEmail());
+            statement.setString(2, user.getPassword());
+            statement.setString(3, user.getFirstName());
+            statement.setString(4, user.getLastName());
+            statement.setString(5, user.getRole());
             statement.execute();
         }
     }

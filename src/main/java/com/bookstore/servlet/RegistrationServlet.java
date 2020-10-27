@@ -6,6 +6,7 @@ import com.bookstore.service.UserService;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 
+import com.bookstore.service.impl.UserServiceImpl;
 import lombok.SneakyThrows;
 import lombok.extern.log4j.Log4j;
 
@@ -14,7 +15,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.Objects;
+import java.util.Random;
 
 @Log4j
 @WebServlet("/registration")
@@ -22,45 +25,40 @@ public class RegistrationServlet extends HttpServlet {
 
     private UserService userService;
 
-    public RegistrationServlet(UserService userService) {
-        this.userService = userService;
+    public RegistrationServlet() {
+        userService = new UserServiceImpl();
     }
 
     @SneakyThrows
     @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) {
 
-        log.info("Start registration user");
+        log.info("Starting user registration.");
 
         String email = req.getParameter("email");
 
         if (Objects.isNull(userService.getUser(email))) {
             log.info("Registration for new user");
-            String password = req.getParameter("password");
-            String confirmPassword = req.getParameter("confirmPassword");
             String firstName = req.getParameter("firstName");
             String lastName = req.getParameter("lastName");
+            String password = req.getParameter("password");
 
-            if (!email.isEmpty() &&
-                    !password.isEmpty() &&
-                    !firstName.isEmpty() &&
-                    !lastName.isEmpty() &&
-                    password.equals(confirmPassword)
-            ) {
-                User user = new User(null, email, password, firstName, lastName, "user");
-                userService.create(user);
-                log.info("User was created : " + user);
+            User user = new User(email, password, firstName, lastName, "user");
+            userService.create(user);
+            log.info("User was registered : " + user);
 
-                HttpSession session = req.getSession(true);
-                session.setAttribute("userName", firstName);
-                session.setAttribute("userEmail", email);
+            HttpSession session = req.getSession(true);
+            session.setAttribute("userName", firstName);
+            session.setAttribute("userEmail", email);
 
-                req.getRequestDispatcher("cabinet.jsp").forward(req, resp);
+            resp.setContentType("text/plain");
+            resp.setCharacterEncoding("UTF-8");
+
+            try (PrintWriter writer = resp.getWriter()) {
+                writer.write("Success");
             }
         } else {
-            log.info("User with email : " + email + " already registered! Redirection to login page ...");
+            log.error("User with email : " + email + " already registered! Redirection to login page ...");
         }
-
-
     }
 }

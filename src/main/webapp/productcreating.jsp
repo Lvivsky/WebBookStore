@@ -1,22 +1,21 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>App-store</title>
-
-    <!-- Bootstrap CSS -->
+    <title>new product</title>
     <link rel="stylesheet"
           href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
           crossorigin="anonymous">
     <link rel="stylesheet"
           href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/newproduct.css">
 </head>
-
 <body>
 
-<div class="login-page">
+
+<div class="product-page">
     <div class="form">
-        <form class="register-form">
+        <form class="register-product-form">
             <input class="firstName" name="firstName" type="text" placeholder="first name"/>
             <input class="lastName" name="lastName" type="text" placeholder="last name"/>
             <input class="email" name="email" type="email" placeholder="email address"/>
@@ -25,18 +24,10 @@
             <input type="button" id="register" value="create">
             <p class="message">Already registered? <a href="#">Sign In</a></p>
         </form>
-        <form class="login-form" action="/login" method="post">
-            <input class="email" name="email" type="email" placeholder="email address"/>
-            <input class="password" name="password" type="password" placeholder="password"/>
-            <input type="button" id="login" value="login"/>
-            <p class="message">Not registered? <a href="#">Create an account</a></p>
-        </form>
     </div>
 </div>
-<jsp:include page="footer.jsp"></jsp:include>
 
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>

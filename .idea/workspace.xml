@@ -28,44 +28,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2fe8f40b-69be-46a8-b1da-bac686d0b617" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_4_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jsp_javax_servlet_jsp_api_2_3_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jstl_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__taglibs_standard_1_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bookstore/dao/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bookstore/dao/impl/UserDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bookstore/exception/AlreadyExistException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bookstore/exception/NotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bookstore/model/Bucket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bookstore/model/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bookstore/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bookstore/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bookstore/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bookstore/servlet/LoginServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bookstore/servlet/RegistrationServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/cabinet.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/footer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/footer.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/bookstore_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/bookstore_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bookstore/dao/BucketDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bookstore/dao/ProductDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bookstore/dao/impl/BucketDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bookstore/dao/impl/ProductDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bookstore/service/BucketService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bookstore/service/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bookstore/service/impl/BucketServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bookstore/service/impl/ProductServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bookstore/servlet/CreateProductServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bookstore/servlet/LogoutServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bookstore/util/RandomGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/newproduct.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/book/default.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/user/default-user-image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/productcreating.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstore.iml" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bookstore/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bookstore/dao/Account.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bookstore/dao/Book.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bookstore/dao/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bookstore/db/MySqlConnector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bookstore/db/MySqlConnector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bookstore/service/AccountServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bookstore/service/UserServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bookstore/service/base/AccountService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bookstore/service/base/UserService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bookstore/dao/impl/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bookstore/dao/impl/UserDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bookstore/model/Bucket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bookstore/model/Bucket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bookstore/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bookstore/model/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bookstore/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bookstore/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bookstore/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bookstore/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bookstore/servlet/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bookstore/servlet/LoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bookstore/servlet/RegistrationServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bookstore/servlet/RegistrationServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/cabinet.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/cabinet.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/registr.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,8 +64,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Jsp File" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -122,6 +111,10 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\PROJECT\WebBookStore\src\main\webapp\img\user" />
+      <recent name="F:\PROJECT\WebBookStore\src\main\webapp\img\book" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\PROJECT\WebBookStore\src\main\webapp" />
       <recent name="F:\PROJECT\WebBookStore\src\main\java\com\bookstore\exception" />
@@ -141,31 +134,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Tomcat 9.0.39" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.39" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/bookstore_war_exploded/" />
+      <option name="BROWSER_ID" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="bookstore:war exploded">
           <settings>
-            <option name="CONTEXT_PATH" value="/bookstore_war_exploded" />
+            <option name="CONTEXT_PATH" value="/" />
           </settings>
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="Unnamed_bookstore_2" />
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_bookstore_3" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -173,7 +153,7 @@
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="59363" />
+        <option name="DEBUG_PORT" value="62535" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -255,7 +235,7 @@
       <option name="presentableId" value="Default" />
       <updated>1602938864472</updated>
       <workItem from="1602938865583" duration="10996000" />
-      <workItem from="1603284275408" duration="9487000" />
+      <workItem from="1603284275408" duration="25803000" />
     </task>
     <task id="LOCAL-00001" summary="add db connector">
       <created>1602949793033</created>
@@ -271,7 +251,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603200931730</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add logining and registration">
+      <created>1603294484296</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1603294484296</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -293,17 +280,22 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="add db connector" />
     <MESSAGE value="add db connector&#10;add db .sql" />
-    <option name="LAST_COMMIT_MESSAGE" value="add db connector&#10;add db .sql" />
+    <MESSAGE value="add logining and registration" />
+    <option name="LAST_COMMIT_MESSAGE" value="add logining and registration" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="294" y="165" width="1092" height="814" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603293783993">
+    <state x="546" y="281" key="#Log_Highlighting_(ideolog)" timestamp="1603554548273">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state x="294" y="165" width="1092" height="814" key="#com.intellij.execution.impl.EditConfigurationsDialog/1680.281.1366.738/0.0.1680.1020@0.0.1680.1020" timestamp="1603293783993" />
-    <state x="645" y="216" key="#com.intellij.ide.util.MemberChooser" timestamp="1603290853607">
+    <state x="546" y="281" key="#Log_Highlighting_(ideolog)/1680.281.1366.738/0.0.1680.1020@0.0.1680.1020" timestamp="1603554548273" />
+    <state x="216" y="131" width="1092" height="716" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603547883483">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state x="645" y="216" key="#com.intellij.ide.util.MemberChooser/1680.281.1366.738/0.0.1680.1020@0.0.1680.1020" timestamp="1603290853607" />
+    <state x="216" y="131" width="1092" height="716" key="#com.intellij.execution.impl.EditConfigurationsDialog/1680.281.1366.738/0.0.1680.1020@0.0.1680.1020" timestamp="1603547883483" />
+    <state x="645" y="216" key="#com.intellij.ide.util.MemberChooser" timestamp="1603554254571">
+      <screen x="0" y="0" width="1680" height="1020" />
+    </state>
+    <state x="645" y="216" key="#com.intellij.ide.util.MemberChooser/1680.281.1366.738/0.0.1680.1020@0.0.1680.1020" timestamp="1603554254571" />
     <state x="569" y="312" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1603293575412">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
@@ -316,69 +308,69 @@
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
     <state x="620" y="265" key="FileChooserDialogImpl/1680.281.1366.738/0.0.1680.1020@0.0.1680.1020" timestamp="1603293718896" />
-    <state width="1125" height="233" key="GridCell.Tab.0.bottom" timestamp="1603293895001">
+    <state width="1125" height="308" key="GridCell.Tab.0.bottom" timestamp="1603554901772">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state width="1125" height="233" key="GridCell.Tab.0.bottom/1680.281.1366.738/0.0.1680.1020@0.0.1680.1020" timestamp="1603293895001" />
-    <state width="1125" height="233" key="GridCell.Tab.0.center" timestamp="1603293895000">
+    <state width="1125" height="308" key="GridCell.Tab.0.bottom/1680.281.1366.738/0.0.1680.1020@0.0.1680.1020" timestamp="1603554901772" />
+    <state width="1125" height="308" key="GridCell.Tab.0.center" timestamp="1603554901772">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state width="1125" height="233" key="GridCell.Tab.0.center/1680.281.1366.738/0.0.1680.1020@0.0.1680.1020" timestamp="1603293895000" />
-    <state width="1125" height="233" key="GridCell.Tab.0.left" timestamp="1603293895000">
+    <state width="1125" height="308" key="GridCell.Tab.0.center/1680.281.1366.738/0.0.1680.1020@0.0.1680.1020" timestamp="1603554901772" />
+    <state width="1125" height="308" key="GridCell.Tab.0.left" timestamp="1603554901772">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state width="1125" height="233" key="GridCell.Tab.0.left/1680.281.1366.738/0.0.1680.1020@0.0.1680.1020" timestamp="1603293895000" />
-    <state width="1125" height="233" key="GridCell.Tab.0.right" timestamp="1603293895001">
+    <state width="1125" height="308" key="GridCell.Tab.0.left/1680.281.1366.738/0.0.1680.1020@0.0.1680.1020" timestamp="1603554901772" />
+    <state width="1125" height="308" key="GridCell.Tab.0.right" timestamp="1603554901772">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state width="1125" height="233" key="GridCell.Tab.0.right/1680.281.1366.738/0.0.1680.1020@0.0.1680.1020" timestamp="1603293895001" />
-    <state width="1125" height="233" key="GridCell.Tab.1.bottom" timestamp="1603293895001">
+    <state width="1125" height="308" key="GridCell.Tab.0.right/1680.281.1366.738/0.0.1680.1020@0.0.1680.1020" timestamp="1603554901772" />
+    <state width="1125" height="308" key="GridCell.Tab.1.bottom" timestamp="1603554901774">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state width="1125" height="233" key="GridCell.Tab.1.bottom/1680.281.1366.738/0.0.1680.1020@0.0.1680.1020" timestamp="1603293895001" />
-    <state width="1125" height="233" key="GridCell.Tab.1.center" timestamp="1603293895001">
+    <state width="1125" height="308" key="GridCell.Tab.1.bottom/1680.281.1366.738/0.0.1680.1020@0.0.1680.1020" timestamp="1603554901774" />
+    <state width="1125" height="308" key="GridCell.Tab.1.center" timestamp="1603554901773">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state width="1125" height="233" key="GridCell.Tab.1.center/1680.281.1366.738/0.0.1680.1020@0.0.1680.1020" timestamp="1603293895001" />
-    <state width="1125" height="233" key="GridCell.Tab.1.left" timestamp="1603293895001">
+    <state width="1125" height="308" key="GridCell.Tab.1.center/1680.281.1366.738/0.0.1680.1020@0.0.1680.1020" timestamp="1603554901773" />
+    <state width="1125" height="308" key="GridCell.Tab.1.left" timestamp="1603554901773">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state width="1125" height="233" key="GridCell.Tab.1.left/1680.281.1366.738/0.0.1680.1020@0.0.1680.1020" timestamp="1603293895001" />
-    <state width="1125" height="233" key="GridCell.Tab.1.right" timestamp="1603293895001">
+    <state width="1125" height="308" key="GridCell.Tab.1.left/1680.281.1366.738/0.0.1680.1020@0.0.1680.1020" timestamp="1603554901773" />
+    <state width="1125" height="308" key="GridCell.Tab.1.right" timestamp="1603554901773">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state width="1125" height="233" key="GridCell.Tab.1.right/1680.281.1366.738/0.0.1680.1020@0.0.1680.1020" timestamp="1603293895001" />
-    <state width="1125" height="233" key="GridCell.Tab.2.bottom" timestamp="1603293895002">
+    <state width="1125" height="308" key="GridCell.Tab.1.right/1680.281.1366.738/0.0.1680.1020@0.0.1680.1020" timestamp="1603554901773" />
+    <state width="1125" height="308" key="GridCell.Tab.2.bottom" timestamp="1603554901774">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state width="1125" height="233" key="GridCell.Tab.2.bottom/1680.281.1366.738/0.0.1680.1020@0.0.1680.1020" timestamp="1603293895002" />
-    <state width="1125" height="233" key="GridCell.Tab.2.center" timestamp="1603293895001">
+    <state width="1125" height="308" key="GridCell.Tab.2.bottom/1680.281.1366.738/0.0.1680.1020@0.0.1680.1020" timestamp="1603554901774" />
+    <state width="1125" height="308" key="GridCell.Tab.2.center" timestamp="1603554901774">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state width="1125" height="233" key="GridCell.Tab.2.center/1680.281.1366.738/0.0.1680.1020@0.0.1680.1020" timestamp="1603293895001" />
-    <state width="1125" height="233" key="GridCell.Tab.2.left" timestamp="1603293895001">
+    <state width="1125" height="308" key="GridCell.Tab.2.center/1680.281.1366.738/0.0.1680.1020@0.0.1680.1020" timestamp="1603554901774" />
+    <state width="1125" height="308" key="GridCell.Tab.2.left" timestamp="1603554901774">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state width="1125" height="233" key="GridCell.Tab.2.left/1680.281.1366.738/0.0.1680.1020@0.0.1680.1020" timestamp="1603293895001" />
-    <state width="1125" height="233" key="GridCell.Tab.2.right" timestamp="1603293895001">
+    <state width="1125" height="308" key="GridCell.Tab.2.left/1680.281.1366.738/0.0.1680.1020@0.0.1680.1020" timestamp="1603554901774" />
+    <state width="1125" height="308" key="GridCell.Tab.2.right" timestamp="1603554901774">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state width="1125" height="233" key="GridCell.Tab.2.right/1680.281.1366.738/0.0.1680.1020@0.0.1680.1020" timestamp="1603293895001" />
+    <state width="1125" height="308" key="GridCell.Tab.2.right/1680.281.1366.738/0.0.1680.1020@0.0.1680.1020" timestamp="1603554901774" />
     <state x="275" y="189" width="998" height="708" key="SettingsEditor" timestamp="1603285117656">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
     <state x="275" y="189" width="998" height="708" key="SettingsEditor/1680.281.1366.738/0.0.1680.1020@0.0.1680.1020" timestamp="1603285117656" />
-    <state x="432" y="243" key="Vcs.Push.Dialog.v2" timestamp="1603200938287">
+    <state x="432" y="243" key="Vcs.Push.Dialog.v2" timestamp="1603294486442">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state x="432" y="243" key="Vcs.Push.Dialog.v2/1680.281.1366.738/0.0.1680.1020@0.0.1680.1020" timestamp="1603200938287" />
+    <state x="432" y="243" key="Vcs.Push.Dialog.v2/1680.281.1366.738/0.0.1680.1020@0.0.1680.1020" timestamp="1603294486442" />
     <state x="496" y="235" key="run.anything.popup" timestamp="1602948947537">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
     <state x="496" y="235" key="run.anything.popup/1680.281.1366.738/0.0.1680.1020@0.0.1680.1020" timestamp="1602948947537" />
-    <state x="503" y="220" width="672" height="678" key="search.everywhere.popup" timestamp="1603289587005">
+    <state x="503" y="220" width="672" height="678" key="search.everywhere.popup" timestamp="1603295904566">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state x="503" y="220" width="672" height="678" key="search.everywhere.popup/1680.281.1366.738/0.0.1680.1020@0.0.1680.1020" timestamp="1603289587005" />
+    <state x="503" y="220" width="672" height="678" key="search.everywhere.popup/1680.281.1366.738/0.0.1680.1020@0.0.1680.1020" timestamp="1603295904566" />
   </component>
 </project>

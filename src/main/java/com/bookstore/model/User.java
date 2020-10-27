@@ -1,5 +1,6 @@
 package com.bookstore.model;
 
+import com.bookstore.util.RandomGenerator;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -16,4 +17,12 @@ public class User {
     private String lastName;
     private String role;
 
+    public User(String email, String password, String firstName, String lastName, String role) {
+        this.id = RandomGenerator.getRandomID();
+        this.email = email;
+        this.password = password;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.role = role;
+    }
 }
