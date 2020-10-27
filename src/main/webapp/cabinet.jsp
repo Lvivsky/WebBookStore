@@ -16,6 +16,8 @@
 <input type="button" class="btn btn-success" id="logout" value="logout"/>
 <input type="button" class="btn btn-success" id="craete-product" value="create new product"/>
 
+<h5>All products:</h5>
+<div id="divProductCards"></div>
 
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -29,5 +31,6 @@
         crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="js/main.js"></script>
+<script src="js/createProduct.js"></script>
 </body>
 </html>
