@@ -62,12 +62,12 @@ public class ProductDaoImpl implements ProductDao {
         try (
                 Connection connection = MySqlConnector.getConnection();
                 PreparedStatement statement = connection.prepareStatement(
-                        "insert into product(name,description,price,bucket_id) values (?,?,?,?)")
+                        "insert into product(name,description,price,picture) values (?,?,?,?)")
                 ) {
             statement.setString(1, product.getName());
             statement.setString(2, product.getDescription());
             statement.setDouble(3, product.getPrice());
-            statement.setInt(4, product.getBucketId());
+            statement.setString(4, product.getPicture());
             statement.execute();
         }
     }
@@ -89,7 +89,7 @@ public class ProductDaoImpl implements ProductDao {
         try (
                 Connection connection = MySqlConnector.getConnection();
                 PreparedStatement statement = connection.prepareStatement(
-                        "update product set name = ?, description = ?, price = ?, bucket_id = ? where id = ?");
+                        "update product set name = ?, description = ?, price = ?, bucket_id = ? where id = ?")
                 ) {
             statement.setString(1, current.getName());
             statement.setString(2, current.getDescription());

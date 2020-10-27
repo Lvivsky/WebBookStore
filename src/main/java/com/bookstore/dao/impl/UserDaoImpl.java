@@ -25,6 +25,7 @@ public class UserDaoImpl implements UserDao {
                         resultSet.getString("password"),
                         resultSet.getString("first_name"),
                         resultSet.getString("last_name"),
+                        resultSet.getString("picture"),
                         resultSet.getString("role")
                 ));
             }
@@ -49,6 +50,7 @@ public class UserDaoImpl implements UserDao {
                         resultSet.getString("password"),
                         resultSet.getString("first_name"),
                         resultSet.getString("last_name"),
+                        resultSet.getString("picture"),
                         resultSet.getString("role")
                 );
             }
@@ -73,6 +75,7 @@ public class UserDaoImpl implements UserDao {
                         resultSet.getString("password"),
                         resultSet.getString("first_name"),
                         resultSet.getString("last_name"),
+                        resultSet.getString("picture"),
                         resultSet.getString("role")
                 );
             }
@@ -85,13 +88,14 @@ public class UserDaoImpl implements UserDao {
         try (
                 Connection connection = MySqlConnector.getConnection();
                 PreparedStatement statement = connection.prepareStatement(
-                        "insert into user(email,password,first_name,last_name,role) values (?,?,?,?,?)")
+                        "insert into user(email,password,first_name,last_name,picture,role) values (?,?,?,?,?,?)")
             ) {
             statement.setString(1, user.getEmail());
             statement.setString(2, user.getPassword());
             statement.setString(3, user.getFirstName());
             statement.setString(4, user.getLastName());
-            statement.setString(5, user.getRole());
+            statement.setString(5, user.getPicture());
+            statement.setString(6, user.getRole());
             statement.execute();
         }
     }

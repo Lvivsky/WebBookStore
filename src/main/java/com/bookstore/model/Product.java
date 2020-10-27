@@ -14,15 +14,14 @@ public class Product {
     private String name;
     private String description;
     private double price;
-    private String image;
+    private String picture;
     private int bucketId;
 
-    public Product(String name, String description, double price, String image, int bucketId) {
+    public Product(String name, String description, double price, String picture) {
         this.id = RandomGenerator.getRandomID();
         this.name = name;
         this.description = description;
         this.price = price;
-        this.image = image;
-        this.bucketId = bucketId;
+        this.picture = picture;
     }
 }

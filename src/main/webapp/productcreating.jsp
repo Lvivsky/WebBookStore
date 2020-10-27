@@ -13,16 +13,13 @@
 <body>
 
 
-<div class="product-page">
+<div class="newProduct">
     <div class="form">
         <form class="register-product-form">
-            <input class="firstName" name="firstName" type="text" placeholder="first name"/>
-            <input class="lastName" name="lastName" type="text" placeholder="last name"/>
-            <input class="email" name="email" type="email" placeholder="email address"/>
-            <input class="password" name="password" type="password" placeholder="password"/>
-            <input class="confirmPassword" name="confirmPassword" type="password" placeholder="confirm password"/>
-            <input type="button" id="register" value="create">
-            <p class="message">Already registered? <a href="#">Sign In</a></p>
+            <input class="name" name="name" type="text" placeholder="name"/>
+            <input class="price" name="price" type="number" placeholder="price"/>
+            <input class="description" name="description" type="text" placeholder="description"/>
+            <input class="submit" id="createProduct" type="button" value="continue"/>
         </form>
     </div>
 </div>
@@ -38,6 +35,6 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script src="js/main.js"></script>
+<script src="js/createProduct.js"></script>
 </body>
 </html>

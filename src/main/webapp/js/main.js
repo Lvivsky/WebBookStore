@@ -76,12 +76,9 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-    $("input#craete-product").click(function () {
-
-
-
-
-    });
+   $("input#craete-product").click(function () {
+       window.location.href = "productcreating.jsp";
+   });
 });
 
 

@@ -1,5 +1,7 @@
 package com.bookstore.service.impl;
 
+import com.bookstore.dao.ProductDao;
+import com.bookstore.dao.impl.ProductDaoImpl;
 import com.bookstore.model.Product;
 import com.bookstore.service.ProductService;
 
@@ -8,6 +10,11 @@ import java.util.List;
 
 public class ProductServiceImpl implements ProductService {
 
+    private ProductDao productDao;
+
+    public ProductServiceImpl() {
+        this.productDao = new ProductDaoImpl();
+    }
 
     @Override
     public List<Product> getAll() throws SQLException {
@@ -21,7 +28,7 @@ public class ProductServiceImpl implements ProductService {
 
     @Override
     public void add(Product product) throws SQLException {
-
+        productDao.create(product);
     }
 
     @Override

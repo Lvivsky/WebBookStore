@@ -43,7 +43,7 @@ public class RegistrationServlet extends HttpServlet {
             String lastName = req.getParameter("lastName");
             String password = req.getParameter("password");
 
-            User user = new User(email, password, firstName, lastName, "user");
+            User user = new User(email, password, firstName, lastName, "default","user");
             userService.create(user);
             log.info("User was registered : " + user);
 
