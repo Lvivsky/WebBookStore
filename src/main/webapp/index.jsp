@@ -22,10 +22,10 @@
             <input class="email" name="email" type="email" placeholder="email address"/>
             <input class="password" name="password" type="password" placeholder="password"/>
             <input class="confirmPassword" name="confirmPassword" type="password" placeholder="confirm password"/>
-            <input type="button" id="register" value="create">
+            <input type="button" id="register" value="create"/>
             <p class="message">Already registered? <a href="#">Sign In</a></p>
         </form>
-        <form class="login-form" action="/login" method="post">
+        <form class="login-form">
             <input class="email" name="email" type="email" placeholder="email address"/>
             <input class="password" name="password" type="password" placeholder="password"/>
             <input type="button" id="login" value="login"/>

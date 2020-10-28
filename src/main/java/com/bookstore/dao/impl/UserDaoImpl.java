@@ -3,11 +3,14 @@ package com.bookstore.dao.impl;
 import com.bookstore.dao.UserDao;
 import com.bookstore.db.MySqlConnector;
 import com.bookstore.model.User;
+import lombok.extern.log4j.Log4j;
 
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
+
+@Log4j
 public class UserDaoImpl implements UserDao {
 
     @Override
@@ -44,6 +47,7 @@ public class UserDaoImpl implements UserDao {
             statement.setInt(1, id);
             ResultSet resultSet = statement.executeQuery();
             while (resultSet.next()) {
+                log.info("try create user");
                 user = new User(
                         resultSet.getInt("id"),
                         resultSet.getString("email"),
@@ -61,6 +65,7 @@ public class UserDaoImpl implements UserDao {
     @Override
     public User getUser(String email) throws SQLException {
         User user = null;
+        log.info("try to get user");
         try (
                 Connection connection = MySqlConnector.getConnection();
                 PreparedStatement statement = connection.prepareStatement(
@@ -69,7 +74,9 @@ public class UserDaoImpl implements UserDao {
             statement.setString(1, email);
             ResultSet resultSet = statement.executeQuery();
             while (resultSet.next()) {
+                log.info("here");
                 user = new User(
+
                         resultSet.getInt("id"),
                         resultSet.getString("email"),
                         resultSet.getString("password"),
@@ -79,6 +86,8 @@ public class UserDaoImpl implements UserDao {
                         resultSet.getString("role")
                 );
             }
+        } catch (SQLException e) {
+            log.info(e.getMessage(), e);
         }
         return user;
     }

@@ -12,13 +12,17 @@
     <title>Cabinet</title>
 </head>
 <body>
+<jsp:include page="header.jsp"></jsp:include>
+
+
 <h3>Welcome user : ${userName} <b> (${userEmail}) </b></h3>
-<input type="button" class="btn btn-success" id="logout" value="logout"/>
 <input type="button" class="btn btn-success" id="craete-product" value="create new product"/>
 
 <h5>All products:</h5>
 <div id="divProductCards"></div>
 
+
+<jsp:include page="footer.jsp"></jsp:include>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -31,6 +35,6 @@
         crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="js/main.js"></script>
-<script src="js/createProduct.js"></script>
+<script src="js/getAllProducts.js"></script>
 </body>
 </html>

@@ -1,0 +1,36 @@
+.dis-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav {
+    display: block;
+    height: 80px;
+    background: rgba(0,0,0,0.25);
+    color: white;
+
+    transition: .7s;
+}
+
+.nav:hover {
+    background-color: rgba(0,0,0,0.5);
+    text-decoration: none;
+}
+
+.logo-link {
+    font-size: 30px;
+    color: white;
+}
+.logo-link:hover {
+    text-decoration: none;
+    color: white;
+}
+.menu-link {
+    font-size: 24px;
+    color: white;
+}
+.menu-link:hover {
+    text-decoration: none;
+    color: white;
+}

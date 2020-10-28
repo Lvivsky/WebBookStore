@@ -14,8 +14,8 @@ public class MySqlConnector {
             + "&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
 
     private static final String USER = "root";
-//    private static final String PASSWORD = "password";
-    private static final String PASSWORD = "1qaz!QAZ";
+    private static final String PASSWORD = "password";
+//    private static final String PASSWORD = "1qaz!QAZ";
 
     public static Connection getConnection()
     {
@@ -25,6 +25,7 @@ public class MySqlConnector {
             connection = DriverManager.getConnection(URL, USER, PASSWORD);
         } catch ( ClassNotFoundException | SQLException e) {
             log.error(e.getMessage(), e);
+            log.info("Database connection failed!");
         }
         return connection;
     }
