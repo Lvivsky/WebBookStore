@@ -9,6 +9,8 @@
           crossorigin="anonymous">
     <link rel="stylesheet"
           href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/cabinet.css"/>
+    <link rel="stylesheet" href="css/login.css"/>
     <title>Cabinet</title>
 </head>
 <body>
@@ -16,7 +18,6 @@
 
 
 <h3>Welcome user : ${userName} <b> (${userEmail}) </b></h3>
-<input type="button" class="btn btn-success" id="craete-product" value="create new product"/>
 
 <h5>All products:</h5>
 <div id="divProductCards"></div>
@@ -35,6 +36,5 @@
         crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="js/main.js"></script>
-<script src="js/getAllProducts.js"></script>
 </body>
 </html>

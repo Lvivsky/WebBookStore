@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $("input#logout").click(function () {
+    $("a#logout").click(function () {
         $.post("logout", null, function (data) {
             if (data == 'Success') {
                 window.location.href = "cabinet.jsp";
@@ -11,7 +11,13 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-   $("input#toLogin").click(function () {
+   $("a#toLogin").click(function () {
        window.location.href = 'index.jsp';
    });
+});
+
+$(document).ready(function () {
+    $("a#toProductAdd").click(function () {
+        window.location.href = "productcreating.jsp";
+    });
 });

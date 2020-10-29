@@ -5,33 +5,26 @@
 <link href="css/header.css" rel="stylesheet">
 
 
-<header class="nav dis-flex">
+<header class="header">
     <div class="container dis-flex">
         <div class="header-logo">
-            <img src="">
+<%--            <img src="">--%>
             <a href="cabinet.jsp" class="logo-link">Store</a>
         </div>
-
-        <nav class="header-menu">
-            <a href="#" class="menu-link">some1</a>
-            <a href="#" class="menu-link">Add product</a>
-            <a href="#" class="menu-link">Bucket</a>
-
-<%--    Some fany feetures        --%>
-
-
-        </nav>
-        <div>
+        <nav class="header-menu dis-flex">
+            <a class="menu-link" id="toProductAdd">Add product</a>
+            <a class="menu-link" id="toBucket">Bucket</a>
             <c:if test="${not empty userEmail}">
-                <input id="logout" type="button" value="Log out"/>
+                <h3>${userEmail}</h3>
+                <a id="logout" class="menu-link">Log out</a>
             </c:if>
             <c:if test="${empty userEmail}">
-                <input id="toLogin" type="button" value="Log in"/>
+                <a id="toLogin" class="menu-link">Log in</a>
             </c:if>
-        </div>
+        </nav>
     </div>
 </header>
-
+<div class="bbb"></div>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
