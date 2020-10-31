@@ -9,8 +9,7 @@
           crossorigin="anonymous">
     <link rel="stylesheet"
           href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/cabinet.css"/>
-    <link rel="stylesheet" href="css/login.css"/>
+
     <title>Cabinet</title>
 </head>
 <body>

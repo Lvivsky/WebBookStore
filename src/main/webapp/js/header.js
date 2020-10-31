@@ -21,3 +21,4 @@ $(document).ready(function () {
         window.location.href = "productcreating.jsp";
     });
 });
+
